@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>My Gallery</title>
+        <!-- Fav icon -->
+        <link rel="icon" href="My logo.jpg">
+        <style>
+            /* Desktop Format */
+            @media only screen and (min-width: 1400px) and (max-width: 3500px) {
+                /* Style for the whole HTML page */
+                html {
+                    background-color: rgb(238, 235, 235);
+                }  
+
+                /* Styling for the logo image */
+                img.logo {
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100px;
+                }
+
+                /* Styling for the nav bar */
+                nav {
+                    display: block;
+                    width: 98%;
+                    padding: 15px;
+                    text-align: center;
+                    overflow: hidden;
+                    background-color: rgb(124, 192, 244);
+                    border: black solid;
+                }
+
+                /* Universal selector for all the <a> tags */
+                * a {
+                    display: inline;
+                    text-decoration: none;
+                    padding: 100px;
+                    color: black;
+                    font-weight: bold;
+                }
+
+                /* Change the link color on hover */
+                nav a:hover {
+                    background-color: #42a1ea;
+                    left: 0;
+                }
+
+                /* Styling for the <h3> tag - Adjacent Sibling selector */
+                br + h3 {
+                    text-align: center;
+                }
+
+                /* Styling for the gallery id */
+                #gallery {
+                    list-style: none;
+                    margin: 0 auto;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            
+                /* Styling for the <li> tag gallery id */
+                #gallery li {
+                    width: 30%;
+                    height: 300px;
+                    padding: 10px;
+                    margin: 0 auto;
+                }
+            
+                /* Styling for the <img> tag gallery id */
+                #gallery img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    cursor: pointer;
+                    border: black solid;
+                }
+            
+                /* Styling for the <img> tag hover in gallery id */
+                #gallery img:hover {
+                    opacity: 0.8;
+                }
+
+                /* Styling for the selected images in the gallery */
+                #gallery .selected {
+                    border: 3px solid red;
+                }
+
+                /* Styling for the element with class links */
+                .links {
+                    display: block;
+                    text-align: center;
+                }
+
+                /* Styling for the element with class button */
+                .button {
+                    display: inline-block;
+                    padding: 10px 30px;
+                    margin-left: 60px;
+                    border-radius: 5px;
+                    border: black solid;
+                    font-size: 16px;
+                    background-color: #cfdfee;
+                    color: black;
+                    cursor: pointer;
+                }
+                
+                /* Styling for the hover effects on the buttons */
+                .button:hover {
+                    background-color: #a1c2e6;
+                }
+
+                /* Styling for the <p> tag in copyright class */
+                    .copyright p {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 40px;
+                    text-align: center;
+                    font-size: 12pt;
+                }
+            }
+
+            /* Tablet format */
+            @media only screen and (min-width: 1000px) and (max-width: 1399px) {
+                /* Style for the whole HTML page */
+                html {
+                    background-color: rgb(238, 235, 235);
+                }  
+
+                /* Styling for the logo image */
+                img.logo {
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100px;
+                }
+
+                /* Styling for the nav bar */
+                nav {
+                    display: block;
+                    width: 98%;
+                    padding: 15px;
+                    text-align: center;
+                    overflow: hidden;
+                    background-color: rgb(124, 192, 244);
+                    border: black solid;
+                }
+
+                /* Universal selector for all the <a> tags */
+                * a {
+                    display: inline;
+                    text-decoration: none;
+                    padding: 100px;
+                    color: black;
+                    font-weight: bold;
+                }
+
+                /* Change the link color on hover */
+                nav a:hover {
+                    background-color: #42a1ea;
+                    left: 0;
+                }
+
+                /* Styling for the <h3> tag - Adjacent Sibling selector */
+                br + h3 {
+                    text-align: center;
+                }
+
+                /* Styling for the gallery id */
+                #gallery {
+                    list-style: none;
+                    margin: 0 auto;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            
+                /* Styling for the <li> tag gallery id */
+                #gallery li {
+                    height: 300px;
+                    padding: 10px;
+                    margin: 0 auto;
+                    width: 45%;
+                }
+            
+                /* Styling for the <img> tag gallery id */
+                #gallery img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    cursor: pointer;
+                    border: black solid;
+                }
+            
+                /* Styling for the <img> tag hover in gallery id */
+                #gallery img:hover {
+                    opacity: 0.8;
+                }
+
+                /* Styling for the selected images in the gallery */
+                #gallery .selected {
+                    border: 3px solid red;
+                }
+
+                /* Styling for the element with class links */
+                .links {
+                    display: block;
+                    text-align: center;
+                }
+
+                /* Styling for the element with class button */
+                .button {
+                    display: inline-block;
+                    padding: 10px 30px;
+                    margin-left: 60px;
+                    border-radius: 5px;
+                    border: black solid;
+                    font-size: 16px;
+                    background-color: #cfdfee;
+                    color: black;
+                    cursor: pointer;
+                }
+                
+                /* Styling for the hover effects on the buttons */
+                .button:hover {
+                    background-color: #a1c2e6;
+                }
+
+                /* Styling for the element with copyright class */
+                .copyright {
+                    position: absolute;
+                    margin-top: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            /* Mobile format */
+            @media only screen and (max-width: 999px) {
+                /* Style for the whole HTML page */
+                html {
+                    background-color: rgb(238, 235, 235);
+                }  
+
+                /* Styling for the logo image */
+                img.logo {
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100px;
+                }
+
+                /* Styling for the nav bar */
+                nav {
+                    display: block;
+                    width: 98%;
+                    padding: 15px;
+                    text-align: center;
+                    overflow: hidden;
+                    background-color: rgb(124, 192, 244);
+                    border: black solid;
+                }
+
+                /* Universal selector for all the <a> tags */
+                * a {
+                    display: inline;
+                    text-decoration: none;
+                    padding: 100px;
+                    color: black;
+                    font-weight: bold;
+                }
+
+                /* Change the link color on hover */
+                nav a:hover {
+                    background-color: #42a1ea;
+                    left: 0;
+                }
+
+                /* Styling for the <h3> tag - Adjacent Sibling selector */
+                br + h3 {
+                    text-align: center;
+                }
+
+                /* Styling for the gallery id */
+                #gallery {
+                    list-style: none;
+                    margin: 0 auto;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            
+                /* Styling for the <li> tag gallery id */
+                #gallery li {
+                    height: 300px;
+                    padding: 10px;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            
+                /* Styling for the <img> tag gallery id */
+                #gallery img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    cursor: pointer;
+                    border: black solid;
+                }
+            
+                /* Styling for the <img> tag hover in gallery id */
+                #gallery img:hover {
+                    opacity: 0.8;
+                }
+
+                /* Styling for the selected images in the gallery */
+                #gallery .selected {
+                    border: 3px solid red;
+                }
+
+                /* Styling for the element with class links */
+                .links {
+                    display: block;
+                    text-align: center;
+                }
+
+                /* Styling for the element with class button */
+                .button {
+                    display: inline-block;
+                    padding: 10px 30px;
+                    margin-left: 60px;
+                    border-radius: 5px;
+                    border: black solid;
+                    font-size: 16px;
+                    background-color: #cfdfee;
+                    color: black;
+                    cursor: pointer;
+                }
+                
+                /* Styling for the hover effects on the buttons */
+                .button:hover {
+                    background-color: #a1c2e6;
+                }
+
+                /* Styling for the element with copyright class */
+                .copyright {
+                    position: static;
+                    margin-top: 50px;
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Logo for the page -->
+        <img src="My logo.jpg" alt="My Logo" href="index.html" class="logo"><br>
+
+        <!-- Nav bar -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <br>
+
+        <!-- Page Heading -->
+        <h3>MY GALLERY</h3>
+        <br>
+        
+        <!-- Pictures in the gallery -->
+        <ul id="gallery">
+            <li><img src="teampic.png" alt="Team picture"></li>
+            <li><img src="car_pic.png" alt="Car picture"></li>
+            <li><img src="home_pic.png" alt="Home picture"></li>
+            <li><img src="Gunarm.JPG" alt="Gun-arm picture"></li>
+            <li><img src="mypicture.JPG" alt="My Picture"></li>
+            <li><img src="saudi_dress.png" alt="Saudi National Dress Picture"></li>
+        </ul>
+
+        <!-- Script tag to add borders to the selected image -->
+        <script>
+            // store the gallery ID element in the gallery variable
+            const gallery = document.getElementById("gallery");
+
+            // store the img tag in the gallery variable
+            const images = document.getElementsByTagName("img");
+
+            // use for loop to loop over all the images
+            for(let i = 0; i < images.length; i++){
+                //event handler
+                images[i].addEventListener("click", function(event) {
+                    event.preventDefault();
+
+                    // store the .selected query in a variable clicked
+                    const clicked = gallery.querySelector(".selected");
+
+                    //add the .selected class 
+                    this.classList.add("selected");
+
+                    //notification when a picture is selected
+                    alert("Image has been selected");
+                    
+                    // conditional statement
+                    if(clicked){
+                        //remove the .selected class
+                        clicked.classList.remove("selected");
+                    }
+                });
+            }
+        </script>
+
+        <br><br>
+        <!-- Page link button -->
+         <div class="links">
+            <a href="index.html" class="button">Home Page</a>
+            <a href="contact.html" class="button">Contact Page</a>
+        </div>        
+
+        <!-- Copyright box -->
+        <div class="copyright">
+            <p> Copyright &#169; 2023</p>
+        </div>
+    </body>
+</html>

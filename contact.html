@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Contact</title>
+        <!-- Fav icon -->
+        <link rel="icon" href="My logo.jpg">
+        <style>
+            /* Style for the whole HTML page */
+            html {
+                background-color: rgb(238, 235, 235);
+            }
+
+            /* Styling for the hero image */
+            body::before {
+                z-index: -1;
+                background-image: url("main_pic.JPG");
+                background-size: cover;
+                background-position: left;
+                content: "";
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                opacity: 0.1; 
+            }
+
+            /* Styling for the logo image */
+            img.logo {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                width: 100px;
+            }
+            
+            /* Styling for the nav bar */
+            nav {
+                display: block;
+                width: 98%;
+                padding: 15px;
+                text-align: center;
+                overflow: hidden;
+                background-color: rgb(124, 192, 244);
+                border: black solid;
+            }
+
+            /* Universal selector for all the <a> tags */
+            * a {
+                display: inline;
+                text-decoration: none;
+                padding: 100px;
+                color: black;
+                font-weight: bold;
+            }
+
+            /* Change the link color on hover */
+            nav a:hover {
+                background-color: #42a1ea;
+            }
+
+            /* Styling for the <h3> tag - Adjacent Sibling selector */
+            br + h3 {
+                text-align: center;
+            }
+
+            /* Styling for the <input> tag - Sibling selector */
+            label ~ input {
+                margin-bottom: 20px;
+                padding: 8px;
+                width: 20%;
+            }
+
+            /* Styling for textarea */
+            textarea {
+                height: 200px;
+                width: 21%;
+            }
+
+            /* Styling for the <button> tag */
+            button {
+                padding: 7px;
+                width: 10%;
+            }
+
+            /* Styling for the element with class links */
+            .links {
+                display: block;
+                text-align: center;
+            }
+
+            /* Styling for the element with class button */
+            .button {
+                display: inline-block;
+                padding: 10px 30px;
+                margin-left: 60px;
+                border-radius: 5px;
+                border: black solid;
+                font-size: 16px;
+                background-color: #cfdfee;
+                color: black;
+                cursor: pointer;
+            }
+            
+            /* Styling for the hover effects on the buttons */
+            .button:hover {
+                background-color: #a1c2e6;
+            }
+
+            /* Desktop Format */
+            @media only screen and (min-width: 1400px) and (max-width: 3500px) {
+                /* Styling for the <p> tag in copyright class */
+                    .copyright p {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 40px;
+                    text-align: center;
+                    font-size: 12pt;
+                }
+            }
+
+            /* Tablet format */
+            @media only screen and (min-width: 1000px) and (max-width: 1399px) {
+                /* Styling for the element with copyright class */
+                .copyright {
+                    position: absolute;
+                    margin-top: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            
+            /* Mobile format */
+            @media only screen and (max-width: 999px) {
+                /* Styling for the <input> tag - Sibling selector */
+                label ~ input {
+                    margin-bottom: 20px;
+                    padding: 8px;
+                    width: 35%;
+                }
+
+                /* Styling for textarea */
+                textarea {
+                    height: 200px;
+                    width: 37%;
+                }
+
+                /* Styling for the element with copyright class */
+                .copyright {
+                    position: static;
+                    margin-top: 50px;
+                    text-align: center;
+                }
+            }
+
+            /* Mobile format */
+            @media only screen and (max-width: 600px) {
+                /* Universal selector for all the <a> tags */
+                * a {
+                    display: inline;
+                    text-decoration: none;
+                    padding: 50px;
+                    color: black;
+                    font-weight: bold;
+                }
+                
+                /* Styling for the <input> tag - Sibling selector */
+                label ~ input {
+                    margin-bottom: 20px;
+                    padding: 8px;
+                    width: 40%;
+                }
+
+                /* Styling for textarea */
+                textarea {
+                    height: 200px;
+                    width: 43%;
+                }
+
+                /* Styling for the <button> tag */
+                button {
+                    padding: 7px;
+                    width: 15%;
+                }
+
+                .button {
+                    display: inline-block;
+                    padding: 10px 30px;
+                    margin-left: 30px;
+                    border-radius: 5px;
+                    border: black solid;
+                    font-size: 16px;
+                    background-color: #cfdfee;
+                    color: black;
+                    cursor: pointer;
+                }
+
+                /* Styling for the element with copyright class */
+                .copyright {
+                    position: static;
+                    margin-top: 50px;
+                    text-align: center;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!-- Logo for the page -->
+        <img src="My logo.jpg" alt="My Logo" href="index.html" class="logo"><br>
+
+        <!-- Nav bar -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+        <br>    
+
+        <!-- Page Heading -->
+        <h3>CONTACT FORM</h3>
+        <br>
+
+        <!-- Form -->
+        <form style="text-align: center;">
+            <label for="name">Name <span style="color: red;">*</span></label><br>
+            <input type="text" id="name" placeholder="Full Name"><br>
+            
+            <label for="email">Email <span style="color: red;">*</span></label><br>
+            <input type="text" id="email" placeholder="Email"><br>
+
+            <label for="number">Phone Number <span style="color: red;">*</span></label><br>
+            <input type="number" id="number" placeholder="Phone Number"><br>
+            
+            <label for="message">Message <span style="color: red;">*</span></label><br>
+            <textarea type="text" id="message" placeholder="Message"></textarea><br><br>
+
+            <button type="submit" value="Submit">Submit</button>
+
+            <!-- Script tag for the validation of the form -->
+            <script>
+                // store the button query in a variable called submit
+                const submit = document.querySelector("button");
+
+                //event handler
+                if(submit != null){
+                    submit.addEventListener("click", function(event){
+                        event.preventDefault()
+                        //call the function validateForm()
+                        validateForm();
+                    });
+                }
+
+                // function to validation the form 
+                function validateForm(){
+                    // declate boolean value for valdidation check
+                    let isValid = true;
+                    
+                    // store all the input values in different variables
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const number = document.getElementById("number").value;
+                    const message = document.getElementById("message").value;
+
+                    // conditional statement to check if the name input is empty
+                    if(name === ""){
+                        // give an alert to the user to enter their name
+                        window.alert("Please enter your full name.");
+                        //set the boolean variable to false
+                        isValid = false;
+                    }
+
+                    // conditional statement to check if the email input is empty
+                    if(email === ""){
+                        // give an alert to the user to enter their email
+                        window.alert("Please enter your email.");
+                        //set the boolean variable to false
+                        isValid = false;
+                    }
+
+                    // conditional statement to check if the number input is empty
+                    if(number === ""){
+                        // give an alert to the user to enter their number
+                        window.alert("Please enter your phone number.");
+                        //set the boolean variable to false
+                        isValid = false;
+                    }
+
+                    // conditional statement to check if the message input is empty
+                    if(message === ""){
+                        // give an alert to the user to enter their message
+                        window.alert("Please enter a message.");
+                        //set the boolean variable to false
+                        isValid = false;
+                    }
+
+                    // when the boolean value is true
+                    if(isValid){
+                        // give an alert to the user that the form is submitted successfully
+                        window.alert("The form has been submitted successfully");
+                        //change the values for the input to empty string
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("number").value = "";
+                        document.getElementById("message").value = "";
+                    }
+
+                    return isValid;
+                }
+            </script>
+        </form>
+
+        <br><br>
+        <!-- Page link button -->
+         <div class="links">
+            <a href="index.html" class="button">Home Page</a>
+            <a href="contact.html" class="button">Contact Page</a>
+        </div>        
+
+        <!-- Copyright box -->
+        <div class="copyright">
+            <p> Copyright &#169; 2023</p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Sarim Mazhar's Portfolio</title>
+        <!-- Fav icon -->
+        <link rel="icon" href="My logo.jpg">
+        <style>
+            /* Tablet format */
+            @media only screen and (min-width: 1000px) and (max-width: 1399px) {
+                html {
+                    background-color: rgb(238, 235, 235);
+                }
+
+                /* Styling for the logo image */
+                img.logo {
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100px;
+                }
+            
+                /* Styling for the nav bar */
+                nav {
+                    display: block;
+                    width: 97%;
+                    padding: 15px;
+                    text-align: center;
+                    overflow: hidden;
+                    background-color: rgb(124, 192, 244);
+                    border: black solid;
+                }
+
+                /* Universal selector for all the <a> tags */
+                * a {
+                    display: inline;
+                    text-decoration: none;
+                    padding: 100px;
+                    color: black;
+                    font-weight: bold;
+                }
+
+                /* Change the link color on hover */
+                nav a:hover {
+                    background-color: #42a1ea;
+                }
+
+                /* Universal selector for the alignment*/
+                h3 {
+                    text-align: center;
+                }
+
+                /* Styling for <img> tag with class main */
+                img.main {
+                    display: block;
+                    border: black solid;
+                    float: left;
+                    margin-left: 20px;
+                    margin-bottom: 50px;
+                    height: 800px;
+                    width: 450px;
+                }
+
+                /* Styling for the <p> tags */
+                p {
+                    text-align: left;
+                    display: block;
+                    margin-left: 500px;
+                    margin-top: -15px;
+                    line-height: 60px;
+                    font-size: 15pt;
+                }
+
+                /* Styling for the <table>, <td> and <th> tags - Multiple selector */
+                table, td, th {
+                    border: 2px solid;
+                    height: 50px;
+                    text-align: center;
+                }
+
+                /* Styling for only the <table> tag */
+                table {
+                    margin-left: 42px;
+                    width: 92%;
+                    font-size: 15pt;
+                }
+
+                /* Styling for the <th> tags */
+                th {
+                    background-color: rgb(244, 245, 232);
+                }
+
+                /* Styling for the <td> tags */
+                td {
+                    background-color: rgb(241, 221, 204);
+                }
+
+                /* Styling for the element with class links */
+                .links {
+                    display: block;
+                    text-align: center;
+                    margin-top: 40px;
+                }
+
+                /* Styling for the element with class button */
+                .button {
+                    display: inline-block;
+                    padding: 15px 50px;
+                    margin-left: 60px;
+                    border-radius: 5px;
+                    border: black solid;
+                    font-size: 16px;
+                    background-color: #cfdfee;
+                    color: black;
+                    cursor: pointer;
+                    font-size: 15pt;
+                }
+                
+                /* Styling for the hover effects on the buttons */
+                .button:hover {
+                    background-color: #a1c2e6;
+                }
+
+                /* Styling for the <p> tag in copyright class */
+                .copyright p {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 40px;
+                    text-align: center;
+                    font-size: 12pt;
+                }
+            }
+
+            /* Desktop Format */
+            @media only screen and (min-width: 1400px) and (max-width: 3500px) {
+                html {
+                    background-color: rgb(238, 235, 235);
+                }
+
+                /* Styling for the logo image */
+                img.logo {
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100px;
+                }
+            
+                /* Styling for the nav bar */
+                nav {
+                    display: block;
+                    width: 97%;
+                    padding: 15px;
+                    text-align: center;
+                    overflow: hidden;
+                    background-color: rgb(124, 192, 244);
+                    border: black solid;
+                }
+
+                /* Universal selector for all the <a> tags */
+                * a {
+                    display: inline;
+                    text-decoration: none;
+                    padding: 100px;
+                    color: black;
+                    font-weight: bold;
+                }
+
+                /* Change the link color on hover */
+                nav a:hover {
+                    background-color: #42a1ea;
+                }
+
+                /* Universal selector for the alignment*/
+                h3 {
+                    text-align: center;
+                }
+
+                /* Styling for <img> tag with class main */
+                img.main {
+                    display: block;
+                    border: black solid;
+                    float: left;
+                    margin-left: 20px;
+                    margin-bottom: 50px;
+                    height: 800px;
+                    width: 450px;
+                }
+
+                /* Styling for the <p> tags */
+                p {
+                    text-align: left;
+                    display: block;
+                    margin-left: 500px;
+                    margin-top: -10px;
+                    padding-right: 50px;
+                    line-height: 45px;
+                    font-size: 15pt;
+                }
+
+                /* Styling for the <table>, <td> and <th> tags - Multiple selector */
+                table, td, th {
+                    border: 2px solid;
+                    height: 90px;
+                    text-align: center;
+                }
+
+                /* Styling for only the <table> tag */
+                table {
+                    margin-left: 500px;
+                    margin-top: 50px;
+                    width: 57%;
+                    font-size: 17pt;
+                }
+
+                /* Styling for the <th> tags */
+                th {
+                    background-color: rgb(244, 245, 232);
+                }
+
+                /* Styling for the <td> tags */
+                td {
+                    background-color: rgb(241, 221, 204);
+                }
+
+                /* Styling for the element with class links */
+                .links {
+                    display: block;
+                    text-align: center;
+                    margin-right: 60px;
+                    margin-top: 40px;
+                }
+
+                /* Styling for the element with class button */
+                .button {
+                    display: inline-block;
+                    padding: 20px 60px;
+                    margin-left: 70px;
+                    margin-top: 50px;
+                    border-radius: 5px;
+                    border: black solid;
+                    font-size: 16px;
+                    background-color: #cfdfee;
+                    color: black;
+                    cursor: pointer;
+                    font-size: 15pt;
+                }
+                
+                /* Styling for the hover effects on the buttons */
+                .button:hover {
+                    background-color: #a1c2e6;
+                }
+
+                /* Styling for the <p> tag in copyright class */
+                .copyright p {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 60px;
+                    text-align: center;
+                    font-size: 12pt;
+                }
+            }
+
+            /* Mobile format */
+            @media only screen and (max-width: 999px) {
+                html {
+                    background-color: rgb(238, 235, 235);
+                }
+
+                /* Styling for the logo image */
+                img.logo {
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100px;
+                }
+            
+                /* Styling for the nav bar */
+                nav {
+                    display: block;
+                    width: 97%;
+                    padding: 15px;
+                    text-align: center;
+                    overflow: hidden;
+                    background-color: rgb(124, 192, 244);
+                    border: black solid;
+                }
+
+                /* Universal selector for all the <a> tags */
+                * a {
+                    display: inline;
+                    text-decoration: none;
+                    padding: 100px;
+                    color: black;
+                    font-weight: bold;
+                }
+
+                /* Change the link color on hover */
+                nav a:hover {
+                    background-color: #42a1ea;
+                }
+
+                /* Universal selector for the alignment*/
+                h3 {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+
+                /* Styling for <img> tag with class main */
+                img.main {
+                    display: block;
+                    border: black solid;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 50px;
+                    height: 800px;
+                    width: 450px;
+                }
+                
+                /* Styling for the <p> tags */
+                p {
+                    text-align: left;
+                    display: block;
+                    margin-top: -10px;
+                    padding-right: 50px;
+                    padding-left: 50px;
+                    line-height: 45px;
+                    font-size: 15pt;
+                }
+
+                /* Styling for the <table>, <td> and <th> tags - Multiple selector */
+                table, td, th {
+                    border: 2px solid;
+                    height: 90px;
+                    text-align: center;
+                }
+
+                /* Styling for only the <table> tag */
+                table {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 20px;
+                    width: 70%;
+                    font-size: 17pt;
+                }
+
+                /* Styling for the <th> tags */
+                th {
+                    background-color: rgb(244, 245, 232);
+                }
+                
+                /* Styling for the <td> tags */
+                td {
+                    background-color: rgb(241, 221, 204);
+                }
+
+                /* Styling for the element with class links */
+                .links {
+                    display: block;
+                    text-align: center;
+                    margin-right: 60px;
+                    margin-top: 40px;
+                }
+                
+                /* Styling for the element with class button */
+                .button {
+                    display: inline-block;
+                    padding: 20px 60px;
+                    margin-left: 70px;
+                    margin-top: 50px;
+                    border-radius: 5px;
+                    border: black solid;
+                    font-size: 16px;
+                    background-color: #cfdfee;
+                    color: black;
+                    cursor: pointer;
+                    font-size: 15pt;
+                }
+                
+                /* Styling for the hover effects on the buttons */
+                .button:hover {
+                    background-color: #a1c2e6;
+                }
+
+                /* Styling for the <p> tag in copyright class */
+                .copyright p {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 60px;
+                    text-align: center;
+                    font-size: 12pt;
+                } 
+            }
+
+            /* Styling for the div tag with class change */
+            .change {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+            }
+
+            /* Styling for the button tags */
+            button {
+                padding: 5px 25px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Logo for the page -->
+        <img src="My logo.jpg" alt="My Logo" href="index.html" class="logo"><br>
+
+        <!-- Nav bar -->
+        <nav>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <br>
+
+        <!-- Title of the page -->
+        <h3>Hello, I am Sarim Mazhar!</h3>
+        <br>
+
+        <!-- Main picture -->
+        <img src="main_pic.JPG" class="main" id="main" alt="My picture">
+
+        <!-- Script tag for main picture shadow effects -->
+        <script>
+            const picture = document.getElementById("main");
+            //conditional ternary operator
+            picture.style.boxShadow = picture.width >= 450 ? "2px 2px 5px black" : "none";
+        </script>
+
+        <!-- My Biography -->
+        <p>I am a first year student in Applied Computer Science program at Dalhousie University. 
+        I moved to Canada in 2022 from Saudi Arabia to complete by education. I plan on playing soccer for 
+        the Dalhousie soccer team and currectly I am the captain of my Indoor Intramurals  Soccer Team. I am a very 
+        outgoing and an enthusiatic person. I always try to do my best to excel in everything that I do. My biggest 
+        motivators is my family. I like to explore new places  and try new cuisines from time to time. I am not as 
+        interested in studies as I am towards playing professional sports. Apart from these, I enjoy going to the gym and 
+        staying fit following a balanced and healthy diet. I prefer drinking water or milk over any other drinks. Oh and 
+        I also believe that age is just a number!</p><br>
+
+        <br><br>
+
+        <!-- My interests table -->
+        <table>
+            <caption><strong>My Interests</strong></caption>
+            <tr>
+                <th>Web Development</th>
+                <td>I enjoy making and styling websites using HTML and CSS.</td>
+            </tr>
+            <tr>
+                <th>Sports</th>
+                <td>I love to play football and want to become a professional footballer in the future.</td>
+            </tr>
+            <tr>
+                <th>Sketching</th>
+                <td>I love to draw and sketch in my free time and do some productive work.</td>
+            </tr>
+        </table>
+
+        <!-- Colour scheme buttons -->
+        <div class="change">
+            <button onclick="click1()">Colour Changer 1</button>
+            <button onclick="click2()">Colour Changer 2</button>
+            <button onclick="click3()">Colour Changer 3</button>
+        </div>
+
+        <script>
+            // Colour Changer
+            // Function 1 using conditionals
+            function click1(){
+                // ask for confirmation before changing the color of the table
+                if(window.confirm("Do you want to change the color of the table?")){
+                    // store the "th" tag in the variable heading
+                    const heading = document.getElementsByTagName("th");
+                    
+                    // use for loop to loop over all the heading and set the background color
+                    for(let i = 0; i < heading.length; i++){
+                        heading[i].style.background = "linear-gradient(to right, #fae3d9, #bbded6)";
+                    }
+
+                    // store the "td" tag in the variable data
+                    const data = document.querySelectorAll("table td");
+                    
+                    // use for loop to loop over all the data and set the background color
+                    for(let i = 0; i < data.length; i++){
+                        data[i].style.background = "linear-gradient(to right, #fae3d9, #bbded6)";
+                    }
+                }
+            }
+
+            // Function 2 using conditionals
+            function click2(){
+                // ask for confirmation before changing the color of the table
+                if(window.confirm("Do you want to change the color of the table?")){
+                    // store the "th" tag in the variable heading
+                    const heading = document.getElementsByTagName("th");
+                    
+                    // use for loop to loop over all the heading and set the background color
+                    for(let i = 0; i < heading.length; i++){
+                        heading[i].style.background = "linear-gradient(to right, #f0fbff, #acdcee)";
+                    }
+
+                    // store the "td" tag in the variable data
+                    const data = document.querySelectorAll("table td");
+                    
+                    // use for loop to loop over all the data and set the background color
+                    for(let i = 0; i < data.length; i++){
+                        data[i].style.background = "linear-gradient(to right, #f0fbff, #acdcee)";
+                    }
+                }
+            }
+
+            // Function 3 using conditionals
+            function click3(){
+                // ask for confirmation before changing the color of the table
+                if(window.confirm("Do you want to change the color of the table?")){
+                    // store the "th" tag in the variable heading
+                    const heading = document.getElementsByTagName("th");
+                    
+                    // use for loop to loop over all the heading and set the background color
+                    for(let i = 0; i < heading.length; i++){
+                        heading[i].style.background = "linear-gradient(to right, #a2a8d3, #e7eaf6)";
+                    }
+
+                    // store the "td" tag in the variable data
+                    const data = document.querySelectorAll("table td");
+                    
+                    // use for loop to loop over all the data and set the background color
+                    for(let i = 0; i < data.length; i++){
+                        data[i].style.background = "linear-gradient(to right, #a2a8d3, #e7eaf6)";
+                    }
+                }
+            }
+        </script>
+        
+        <br><br><br>
+
+        <!-- Page link button -->
+        <div class="links">
+            <a href="gallery.html" class="button">Gallery Page</a>
+            <a href="contact.html" class="button">Contact Page</a>
+        </div>        
+
+        <!-- Copyright box -->
+        <div class="copyright">
+            <p> Copyright &#169; 2023</p>
+        </div>
+    </body>
+</html>
